@@ -1,35 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// As funções deve ser em PascalCase
 
-function App() {
-  const [count, setCount] = useState(0)
+export function App() {
+    console.log('oi')
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        // React Fragment (Elemento da linha abaixo), como não posso retornar mais de um elementor para o main eu uso este recurso para que não aparece mais uma div no inspec e encapsule os elementos em um so para se rendenizado no main
+        <> 
+            <h1>Olá mundo!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium hic nulla commodi nemo obcaecati doloribus deserunt est, eaque aut quis exercitationem incidunt eius ullam consectetur. Ea ullam dignissimos deserunt earum.</p>
+        </>
+    )
 }
 
-export default App
+// export { App }; // Export nomeado, ele força a ser usado o mesmo nome no main.tsx
