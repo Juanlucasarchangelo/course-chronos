@@ -1,4 +1,8 @@
 // As funções deve ser em PascalCase
+import { Heading } from './components/Heading';
+
+import './styles/global.css';
+import './styles/theme.css'
 
 export function App() {
     console.log('oi')
@@ -6,7 +10,7 @@ export function App() {
     return (
         // React Fragment (Elemento da linha abaixo), como não posso retornar mais de um elementor para o main eu uso este recurso para que não aparece mais uma div no inspec e encapsule os elementos em um so para se rendenizado no main
         <> 
-            <h1>Olá mundo!</h1>
+            <Heading />
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium hic nulla commodi nemo obcaecati doloribus deserunt est, eaque aut quis exercitationem incidunt eius ullam consectetur. Ea ullam dignissimos deserunt earum.</p>
         </>
     )
