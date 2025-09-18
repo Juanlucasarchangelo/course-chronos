@@ -1,10 +1,10 @@
 // As funções deve ser em PascalCase
 import { Heading } from './components/Heading';
 
-import './styles/global.css';
 import './styles/theme.css'
+import './styles/global.css';
 
-export function App() {
+export function App() { // Export nomeado
     console.log('oi')
 
     return (
