@@ -1,5 +1,10 @@
 import styles from './Heading.module.css';
 
-export function Heading () {
-    return <h1 className={`${styles.heading} ${styles.purple}`}>Componente de teste</h1>
+// Tipagem dos danos a serem recebidos
+type headingProps = {
+    children: React.ReactNode;
+}
+
+export function Heading ({ children }: headingProps) {
+    return <h1 className={`${styles.heading}`}>{children}</h1>
 }
