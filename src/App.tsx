@@ -1,22 +1,25 @@
-// As funções deve ser em PascalCase
-import { Heading } from './components/Heading';
-
 import './styles/theme.css'
 import './styles/global.css';
-import { TimerIcon } from 'lucide-react';
 
-export function App() { // Export nomeado
+import { Conteiner } from './components/Container';
+import { Heading } from './components/Heading';
+
+export function App() {
     return (
-        // React Fragment (Elemento da linha abaixo), como não posso retornar mais de um elementor para o main eu uso este recurso para que não aparece mais uma div no inspec e encapsule os elementos em um so para se rendenizado no main
-        <> 
-            <Heading>
-                Olá Mundo!
-                <button>
-                    <TimerIcon />
-                </button>
-            </Heading>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium hic nulla commodi nemo obcaecati doloribus deserunt est, eaque aut quis exercitationem incidunt eius ullam consectetur. Ea ullam dignissimos deserunt earum.</p>
-        </>
+        <>
+        <Conteiner>
+            <Heading>LOGO</Heading>
+        </Conteiner>
+        <Conteiner>
+            <Heading>MENU</Heading>
+        </Conteiner>
+        <Conteiner>
+            <Heading>FORM</Heading>
+        </Conteiner>
+        <Conteiner>
+            <Heading>FOOTER</Heading>
+        </Conteiner>
+    </>
     )
 }
 

@@ -1,6 +1,5 @@
-import styles from './Heading.module.css';
+import styles from './styles.module.css';
 
-// Tipagem dos danos a serem recebidos
 type headingProps = {
     children: React.ReactNode;
 }
