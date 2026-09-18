@@ -20,25 +20,25 @@ export function App() {
       <Conteiner>
         <CountDown />
       </Conteiner>
-      <Conteiner>
-        <form className="form" action="">
-          <div className="formRow">
-            <DefaultInput type='text' id='task' labelText='Task'></DefaultInput>
-          </div>
-          <div className="formRow">
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
+        <Conteiner>
+          <form className="form" action="">
+            <div className="formRow">
+              <DefaultInput type='text' id='task' labelText='Task'></DefaultInput>
+            </div>
+            <div className="formRow">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
 
-          <div className="formRow">
-            <p>Ciclos</p>
-            <p>0 0 0 0 0 0 0</p>
-          </div>
+            <div className="formRow">
+              <p>Ciclos</p>
+              <p>0 0 0 0 0 0 0</p>
+            </div>
 
-          <div className="formRow">
-            <button>Enviar</button>
-          </div>
-        </form>
-      </Conteiner>
+            <div className="formRow">
+              <button>Enviar</button>
+            </div>
+          </form>
+        </Conteiner>
       <Conteiner>
         <Heading>FOOTER</Heading>
       </Conteiner>
