@@ -2,7 +2,6 @@ import "./styles/theme.css";
 import "./styles/global.css";
 
 import { Conteiner } from "./components/Container";
-import { WhatsButton } from "./components/WhatsButton";
 import { Heading } from "./components/Heading";
 import { Logo } from "./components/Logo";
 import { Menu } from "./components/Menu";
