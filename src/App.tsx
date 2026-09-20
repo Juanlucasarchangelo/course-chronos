@@ -10,7 +10,7 @@ import { DefaultInput } from "./components/DefaultInput";
 
 export function App() {
   return (
-    <>
+    <> {/* // React Fragments */}
       <Conteiner>
         <Logo />
       </Conteiner>
@@ -23,7 +23,7 @@ export function App() {
       <Conteiner>
         <form className="form" action="">
           <div className="formRow">
-            <DefaultInput type='text' id='task' labelText='Task'></DefaultInput>
+            <DefaultInput type='text' id='task' labelText='Task' disabled defaultValue='Valor Preenchido' placeholder="Batata"></DefaultInput>
           </div>
           <div className="formRow">
             <p>Lorem ipsum dolor sit amet.</p>
